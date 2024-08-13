@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="sass/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h1>Rock, Paper, Scissors</h1>
+      <button class="rock" @click="play('rock')">Rock</button>
+      <button class="paper" @click="play('paper')">Paper</button>
+      <button class="sciss" @click="play('scissors')">Scissors</button>
+      <h2 v-if="result">{{ computerChoice }}</h2>
+      <h2 v-if="result">{{ result }}</h2>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
